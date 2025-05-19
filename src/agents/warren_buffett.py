@@ -16,7 +16,14 @@ class WarrenBuffettSignal(BaseModel):
 
 
 def warren_buffett_agent(state: AgentState):
-    """Analyzes stocks using Buffett's principles and LLM reasoning."""
+    """
+    Analyzes stocks using Warren Buffett's investment principles:
+    1. Simple, understandable business model.
+    2. Consistent operating history with strong returns on equity.
+    3. Management with integrity and shareholder-aligned interests.
+    4. Companies with durable competitive advantages ("economic moats").
+    5. Attractive price relative to intrinsic value.
+    """
     data = state["data"]
     end_date = data["end_date"]
     tickers = data["tickers"]
